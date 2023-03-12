@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg " style=" background-color: antiquewhite;">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" >
+        <a class="navbar-brand" href="www.google.com" >TaskToDO</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active " *ngIf="_loginckeck.Loginchecheck()" (click)="_loginckeck.Loginchechecked()" style="cursor: pointer;"  routerLinkActive="active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" *ngIf="_loginckeck.Loginchecheck()" routerLink="/todo" routerLinkActive="active">ToDo</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex" >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" *ngIf="!_loginckeck.Loginchecheck()" routerLink="/login" routerLinkActive="active">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" *ngIf="_loginckeck.Loginchecheck()" routerLink="/logout" routerLinkActive="active">Logout</a>
+              </li>
+            </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>

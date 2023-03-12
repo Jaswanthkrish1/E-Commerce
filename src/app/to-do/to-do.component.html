@@ -1,0 +1,41 @@
+<div class="container">
+<div class="table-responsive">
+    <table class="table table-striped
+    table-hover	
+    table-borderless
+    table-primary
+    align-middle">
+        <thead class="table-light">
+            <caption style="display: block;font-family:'Times New Roman', Times, serif;">TODO</caption>
+  <div class="alert alert-success" *ngIf='message'>{{message}}</div>
+
+            <tr>
+                <th>Username</th>
+                <th>Problem</th>
+                <th>WorkComplited</th>
+                <th>Date</th>
+                
+                <th>Actions</th>
+                   
+                
+            </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr class="table-primary" *ngFor="let list of Todos" >
+                    <td scope="row">{{list.name}}</td>
+                    <td>{{list.problam}}</td>
+                    <td>{{list.workComplited}}</td>
+                    <td>{{list.date|date}}</td>
+                    <td> <button class="btn btn-dark " (click)="UpdateTodo(list.prbId)">UpDate</button></td>
+                    <td><button class="btn btn-warning"(click)="deliteTodo(list.prbId)">Delete</button></td>
+
+                </tr>
+                
+            </tbody>
+            <tfoot>
+                
+            </tfoot>
+    </table>
+</div>
+<button class="btn btn-success" (click)="SaveTodo()">Add New ToDo</button>
+</div>
