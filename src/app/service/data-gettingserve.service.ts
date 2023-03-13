@@ -13,7 +13,7 @@ export class DataGettingserveService {
   deleteid(id :any ){
     return this._http.delete(`http://localhost:8080/user/${id}`)
   }
-  gettingallldata( username :string){
+  gettingAlldata( username :string){
     return this._http.get<Todowork[]>(`http://localhost:8080/user/${username}/todos`)
    }
 
