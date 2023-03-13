@@ -10,20 +10,16 @@
   <div class="alert alert-success" *ngIf='message'>{{message}}</div>
 
             <tr>
-                <th>Username</th>
                 <th>Problem</th>
                 <th>WorkComplited</th>
                 <th>Date</th>
-                
                 <th>Actions</th>
-                   
-                
+              
             </tr>
             </thead>
             <tbody class="table-group-divider">
                 <tr class="table-primary" *ngFor="let list of Todos" >
-                    <td scope="row">{{list.name}}</td>
-                    <td>{{list.problam}}</td>
+                    <td scope="row">{{list.problam}}</td>
                     <td>{{list.workComplited}}</td>
                     <td>{{list.date|date}}</td>
                     <td> <button class="btn btn-dark " (click)="UpdateTodo(list.prbId)">UpDate</button></td>

@@ -61,7 +61,7 @@ UpdateTodo(id:any){
 public RefreshTodo(){
   //This will inialize ones when the component get called.
   if(this._authupdate.Loginchecheck()){
-    this._ToDoList.gettingallldata(this._authupdate.sendUserNameAsHttpPathVariable()).subscribe(data=>{
+    this._ToDoList.gettingAlldata(this._authupdate.sendUserNameAsHttpPathVariable()).subscribe(data=>{
      this.Todos=data
      //getting data from url.
      console.log(this.Todos)
@@ -70,6 +70,6 @@ public RefreshTodo(){
 }
 // ]
  ngOnInit(){
- this.RefreshTodo();
+  this.RefreshTodo();
   }
 }
