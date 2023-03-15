@@ -12,7 +12,7 @@ export class Todowork{
     public name:String,
     public problam:String,
     public workComplited:Boolean,
-    public date:Date,
+    public date:Date
     
   ){}
 }

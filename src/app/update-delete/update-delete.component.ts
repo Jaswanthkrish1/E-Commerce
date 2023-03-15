@@ -50,7 +50,5 @@ this._SaveUpdate.getById(this.id).subscribe(data=>this.todo=data)}
       this._httpNavigate.navigate(['/todo'])
     })}
   }
-  saveNew(){
-    this._SaveUpdate.addTodo(this.todo)
-  }
+  
 }
