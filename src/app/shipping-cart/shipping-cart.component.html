@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jewelry</title>
+</head>
+
+<body>
+
+  <section id="center" class="clearfix center_prod sec_n">
+    <div class="container">
+      <div class="row">
+        <div class="center_prod_1 text-center clearfix">
+          <div class="col-sm-12">
+            <h5 class="mgt col_1 normal"><a href="#">Home</a> | Shopping Cart</h5>
+            <h1 class="col_1">Shopping Cart</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cart_shop1">
+    <div class="container">
+      <div class="row">
+        
+        <div class="table-responsive">
+          <table class="table table-striped
+      
+    table-borderless
+    table-primary
+    ">
+            <thead class="table-light">
+              <caption style="color: gold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                <h5 class="mgt col_1 normal">Cart<span style="padding-left: 5px;">Items</span></h5>
+              </caption>
+              
+            </thead>
+            <tbody class="table-group-divider">
+              <tr class="table-primary" *ngFor="let items of add">
+                <td scope="row " class="imfit">
+
+                  <img [src]="items.src" alt="">
+                  <div class="cart_3l1i2 clearfix">
+
+                    <div class="cart_3l1i2_inner input-group number-spinner">
+                      <span>
+                        <button class="btn btn-default" data-dir="dwn"><span
+                            class="glyphicon glyphicon-minus"></span></button>
+                      </span>
+                      <input type="text" class="form-control text-center" value="1" readonly style="border-radius: 100px 100px 100px 100px; border: none;">
+                      <span>
+                        <button class="btn btn-default" data-dir="up"><span
+                            class="glyphicon glyphicon-plus"></span></button>
+                      </span>
+                    </div>
+                  </div>
+
+                </td>
+                <td>
+                  <div class="cart_3l1i1 clearfix">
+                    <h5 class="mgt">Naminos elementum disus tincidunts cosmo de cosmopolis</h5>
+                    <h4 class="col-sm-6">$175.00</h4>
+                    <h5 class="col-sm-6">RED / XS <span>
+                        <h6>Vendor</h6>
+                      </span></h5>
+                  </div>
+
+
+                  <div class="adjustment1">
+                    <div>
+                      <h6 class="mgt"><a class="button_1 mgt" href="#">REMOVE</a></h6>
+                    </div>
+                    <div>
+                      <h6 class="mgt"><a class="button mgt" href="#">UPDATE</a></h6>
+                    </div>
+                  </div>
+                </td>
+
+              </tr>
+
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="row container-fluid">
+  <div class="col-sm-12 adj_">
+     <div class="col-sm-6">
+    <div class="cart_3r clearfix">
+      <h5 class="mgt head_1">SUBTOTAL</h5>
+      <h3 class="text-center">$1,347.00</h3>
+   
+      <hr>
+      <h6>Additional comments</h6>
+      <input class="form-control" type="text">
+      <h5 class="text-center"><a class="button" routerLink="/CheckOut">PROCEED TO CHECKOUT</a></h5><br>
+      <h5>GET SHIPPING ESTIMATES</h5>
+      <hr>
+    </div>
+  </div>
+  <div class="col-sm-6 adj_inner">
+    <div class="cart_3r1 clearfix">
+      <h6>Country</h6>
+      <select class="form-control" id="subject" name="subject">
+        <option>America</option>
+        <option>India</option>
+        <option>England</option>
+        <option>Africa</option>
+      </select><br>
+      <h6>State</h6>
+      <select class="form-control" id="subject" name="subject">
+        <option>Telangana</option>
+        <option>Uttar Pradesh</option>
+        <option>Punjab</option>
+        <option>Andra Pradesh</option>
+      </select><br>
+      <h6>Postal/Zip Code</h6>
+      <input class="form-control" type="text">
+      <h5 class="text-center"><a class="button_1" href="#">CALCULATE SHIPPING</a></h5>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+  <section id="footer" class="clearfix">
+    <div class="container">
+      <div class="row">
+        <div class="footer_top clearfix">
+          <div class="col-sm-2 footer_top_left left_1 clearfix">
+            <div class="footer_top_left_inner clearfix">
+              <h4>INCEPTOS</h4>
+              <ul>
+                <li><a href="shop.html">consectetur</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2 footer_top_left left_1 clearfix">
+            <div class="footer_top_left_inner clearfix">
+              <h4>SEM SOCIOSQU</h4>
+              <ul>
+                <li><a href="#">Taciti, Praesent & Torquent Libero</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Terms & Conditions and Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2 footer_top_left left_1 clearfix">
+            <div class="footer_top_left_inner clearfix">
+              <h4>DIGNISSIM INTEGER</h4>
+              <ul>
+                <li><a href="#">Ipsum Dolor Sit</a></li>
+                <li><a href="#">Duis Sagittis Ipsum</a></li>
+                <li><a href="#">Nulla quis sem at nibh</a></li>
+                <li><a href="#">SEM Litora</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2 footer_top_left left_1 clearfix">
+            <div class="footer_top_left_inner clearfix">
+              <h4>IMPERDIET</h4>
+              <ul>
+                <li><a href="#">Litora Torquent</a></li>
+                <li><a href="#">Mauris Massa</a></li>
+                <li><a href="#">Duis Sagittis</a></li>
+                <li><a href="#">Sed Dignissim Lacinia</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2 footer_top_left left_1 clearfix">
+            <div class="footer_top_left_inner clearfix">
+              <h4>ADIPISCING</h4>
+              <ul>
+                <li><a href="#">Consectetur</a></li>
+                <li><a href="#">Taciti Sociosqu</a></li>
+                <li><a href="#">Curabitursodales</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2 footer_top_left clearfix">
+            <div class="footer_top_left_inner clearfix">
+              <h4>GET IN TOUCH</h4>
+              <ul>
+                <li><a href="#">9999-626-5353</a></li>
+                <li><a href="#">(11am - 7pm IST, MON - SAT)</a></li>
+                <li><a href="#">info@gmail.com</a></li>
+                <li><a href="#">Conubia Nostra</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer_last" class="clearfix">
+    <div class="container">
+      <div class="row">
+        <div class="footer_last clearfix">
+          <h5>Buy Jewellery Online with www.kpjeweller.com</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odionec odio. Praesent libero. Sed
+            cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+            Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+          </p>
+          <p>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent
+            taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero.
+            Sed dignissim lacinia nunc.</p>
+          <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula
+            in libero. </p>
+          <h6>. Consectetur Elementum</h6>
+          <h6>. Sociosqu Elementum</h6>
+          <h6>. Dapibus Elementum</h6>
+          <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula
+            in libero. </p>
+          <p>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent
+            taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero.
+            Sed dignissim lacinia nunc.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer_last_2" class="clearfix">
+    <div class="container">
+      <div class="row">
+        <div class="footer_last_2 clearfix">
+          <div class="footer_last_2_inner clerafix">
+            <p class="website">© 2013 Your Website Name. All rights reserved | Design by<a
+                href="http://www.templateonweb.com"> TemplateOnWeb</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
+<router-outlet></router-outlet>

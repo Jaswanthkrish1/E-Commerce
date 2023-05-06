@@ -1,0 +1,219 @@
+<head>
+ 
+</head>
+ <nav class="navbar_12">
+<section id="header_2" class=" fixed-top">
+  <div class="topnav">
+    <div class="container topnav_inner">
+     <div class="row">
+      <div class="header_2_top ">
+       <div class="col-sm-3 header_2_top_left ">
+      <div class="header_2_top_left_inner ">
+       <p><a href="#"><img src="../../assets/img/1.png" alt="profile_NotSet"></a></p>
+      </div>
+     </div>
+     <form id="formdata">
+     <div class="col-sm-5 header_2_top_middle ">
+      <div class="header_2_top_middle_inner ">
+                               <div class="input-group col-sm-12 header_2_top_middle_inner_2 ">
+                                   <input type="text" #data class="  search-query form-control form-control_new" id="inputdata"
+                                    placeholder="Search product" >
+                                   <span class="input-group-btn">
+                                       <button class="btn btn-danger" (click)="search(data.value)" type="submit">
+                                           <span class="glyphicon glyphicon-search" ></span>
+                                       </button>
+                                   </span>
+                               </div>
+      </div>
+     </div>
+    </form>
+     <div class="col-sm-4 header_2_top_right ">
+      <div class="header_2_top_right_inner ">
+       <ul>
+        <li>
+       <a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+   
+           <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+           <div class="modal-dialog">
+           <div class="loginmodal-container">
+             <h1>Login to Your Account</h1><br>
+             <form>
+             <input type="text" name="user" placeholder="Username">
+             <input type="password" name="pass" placeholder="Password">
+             <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+             </form>
+             
+             <div class="login-help">
+             <a href="#">Register</a> - <a href="#">Forgot Password</a>
+             </div>
+           </div>
+         </div>
+         </div>
+     </li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#"><i class=""></i></a></li>
+       </ul>
+      </div>
+     </div>
+      </div>
+     </div>
+    </div>
+  </div>
+   </section>
+
+
+   <section id="header_3"  class="cd-secondary-nav sec_n">
+    <nav class="navbar navbar-default ">
+          <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header page-scroll">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="../assets/img/1.png"></a>
+              </div>
+  
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                      <li>
+                          <a class="tag_menu active_tab" routerLink="/">HOME</a>
+                      </li>
+             
+             <li class="dropdown">
+              <a class="tag_menu active_tab" href="#" data-toggle="dropdown" role="button" aria-expanded="false">PRODUCT<span class="caret"></span></a>
+              <ul class="dropdown-menu drop_1" role="menu">
+              <li><a class="hvr-forward" routerLink="Products">Product</a></li>
+              <li><a class="border_none hvr-forward" href="/ProductDetails"  routerLinkActive="active" >Product Detail</a></li>
+              </ul>
+                      </li>
+            
+             <li class="dropdown ">
+              <a class="tag_menu active_tab" href="#" data-toggle="dropdown" role="button" aria-expanded="false">BLOG<span class="caret"></span></a>
+              <ul class="dropdown-menu drop_1" role="menu">
+              <li><a class="hvr-forward" href="blog.html">Blog</a></li>
+              <li><a class="border_none hvr-forward" href="detail.html">Blog Detail</a></li>
+              </ul>
+               </li>
+            
+            
+            <li>
+                          <a class="tag_menu active_tab" href="about.html">ABOUT</a>
+                      </li>
+            
+            <li>
+                          <a class="tag_menu active_tab" href="contact.html">CONTACT</a>
+                      </li>
+            
+            <li class="dropdown dropdown-large">
+          <a href="#" class="dropdown-toggle tag_menu active_tab" data-toggle="dropdown">DROPDOWN<b class="caret"></b></a>
+          
+          <ul class="dropdown-menu dropdown-menu-large row">
+            <li class="col-sm-2 space_all">
+              <ul>
+                <li><a href="#"><img src="../../assets/img/5.png" class="iw" alt="abc"></a></li>
+                <li><a href="#">Minim Veniam – An Exc...</a></li>
+                              <li><a class="col_2" href="#"><i class="fa fa-calendar col_1"></i> March 29, 2019</a></li>
+              </ul>
+            </li>
+            <li class="col-sm-2 space_all">
+              <ul>
+                <li><a href="#"><img src="../../assets/img/6.png" class="iw" alt="abc"></a></li>
+                <li><a href="#">Lorem world – An Exc...</a></li>
+                              <li><a class="col_2" href="#"><i class="fa fa-calendar col_1"></i> March 29, 2019</a></li>
+              </ul>
+            </li>
+            <li class="col-sm-2 space_all">
+              <ul>
+                <li><a href="#"><img src="../../assets/img/7.png" class="iw" alt="abc"></a></li>
+                <li><a href="#">Eget Nulla – An Exc...</a></li>
+                              <li><a class="col_2" href="#"><i class="fa fa-calendar col_1"></i> March 29, 2019</a></li>
+              </ul>
+            </li>
+            <li class="col-sm-2 space_all">
+              <ul>
+                <li><a href="#"><img src="../../assets/img/8.png" class="iw" alt="abc"></a></li>
+                <li><a href="#">Dabibus Diam – An Exc...</a></li>
+                              <li><a class="col_2" href="#"><i class="fa fa-calendar col_1"></i> March 29, 2019</a></li>
+              </ul>
+            </li>
+            
+            <li class="col-sm-2 space_all">
+              <ul>
+                <li><a href="#"><img src="../../assets/img/9.png" class="iw" alt="abc"></a></li>
+                <li><a href="#">Imperdi Board – An Exc...</a></li>
+                              <li><a class="col_2" href="#"><i class="fa fa-calendar col_1"></i> March 29, 2019</a></li>
+              </ul>
+            </li>
+            
+            <li class="col-sm-2 space_all">
+              <ul>
+                <li><a href="#"><img src="../../assets/img/10.png" class="iw" alt="abc"></a></li>
+                <li><a href="#">Semper Board – An Exc...</a></li>
+                              <li><a class="col_2" href="#"><i class="fa fa-calendar col_1"></i> March 29, 2019</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+          
+          
+        </li>
+            <!-- Future for future use just list of drop down -->
+            <!-- <li class="dropdown">
+              <a class="tag_menu" href="blog.html" data-toggle="dropdown" role="button" aria-expanded="false">PAGES<span class="caret"></span></a>
+              <ul class="dropdown-menu drop_1" role="menu">
+              <li><a >Shopping Cart</a></li>
+              <li><a href="/cart">Checkout</a></li>
+              </ul>
+               </li> -->
+            
+            <li class="dropdown">
+              <a class="tag_menu active_tab" href="#" data-toggle="dropdown" role="button" aria-expanded="false"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+              <ul class="dropdown-menu drop_1o" role="menu">
+              <li>
+               <div class="drop_1i ">
+                <div class="col-sm-6">
+                 <div class="drop_1il "><h5 class="mgt">2 ITEMS</h5></div>
+                </div>
+                <div class="col-sm-6">
+                 <div class="drop_1il text-right "><h5 class="mgt"><a routerLink="/CheckOut">VIEW CART</a></h5></div>
+                </div>
+               </div>
+               <!-- Recently added cart will be display hear by using for loop -->
+               <div class="drop_1i1 ">
+                <div class="col-sm-8">
+                 <div class="drop_1i1l "><h6 class="mgt bold"><a href="#">Nulla Quis</a> <br> <span class="normal col_2">1x - $89.00</span> <br> <span><i class="fa fa-remove"></i></span></h6></div>
+                </div>
+                <div class="col-sm-4">
+                 <div class="drop_1i1r text-right "><a href="#"><img src="../../assets/img/14.png" height="60" class="iw" alt="abc"></a></div>
+                </div>
+               </div>
+
+               
+               
+               
+               <div class="drop_1i3 text-center ">
+                <div class="col-sm-12">
+                 <h5><a class="button_1 block" routerLink="/CheckOut">CHECKOUT</a></h5>
+                 <h5><a class="button block" routerLink="/cart"  >VIEW CART</a></h5>
+                </div>
+               </div>
+              </li>
+              </ul>
+                      </li>
+            
+                  </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+      </nav> 
+     
+  </section>
+ </nav>
+  <router-outlet></router-outlet>
+
+
