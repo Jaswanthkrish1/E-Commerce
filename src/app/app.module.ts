@@ -2,36 +2,30 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { WellcomeComponent } from './wellcome/wellcome.component';
-import { LoginComponent } from './login/login.component';
-import { ToDoComponent } from './to-do/to-do.component';
-import { TopMenuComponent } from './top-menu/top-menu.component';
-import { FooterComponent } from './footer/footer.component';
-import { AppRoutingModule } from './app-routings--flat.module';
-import { ErrorMsgComponent } from './error-msg/error-msg.component';
-import { LogoutComponent } from './logout/logout.component';
+import { MainPageComponent } from './main-page/main-page.component';
+import { CheckOutComponent } from './check-out/check-out.component';
 import {HttpClientModule} from '@angular/common/http'
-import { UpdateDeleteComponent } from './update-delete/update-delete.component';
-import { TestModuleModule } from './test-module/test-module.module';
+import { AppRoutingModule, MyRouting } from './app-routings--module';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { ProductRepresentComponent } from './product-represent/product-represent.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    WellcomeComponent,
-    LoginComponent,
-    ToDoComponent,
-    TopMenuComponent,
-    FooterComponent,
-    ErrorMsgComponent ,
-    LogoutComponent,UpdateDeleteComponent
+    NavBarComponent,
+    MainPageComponent,
+    CheckOutComponent,
+    ProductRepresentComponent,
+MyRouting,
+TestComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    
     
   ],
   providers: [],

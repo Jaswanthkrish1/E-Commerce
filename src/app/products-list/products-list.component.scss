@@ -1,0 +1,681 @@
+/*
+Template Name:Jewelry
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+
+h1,h2,h3,h4,h5,h6{
+padding:0;
+margin:0;
+}
+a:hover{
+text-decoration:none;
+}
+ul{
+padding:0;
+margin:0;
+list-style:none;
+}
+p{
+padding:0;
+margin:0;
+}
+.space_left{
+padding-left:0; 
+} 
+.space_right{
+padding-right:0; 
+} 
+.space_all{
+padding:0; 
+} 
+.border_none_1{
+border:none!important;
+}
+
+
+/*********************shop****************/
+
+.shop_1_top ul li{
+display:inline-block;
+margin-right:10px;
+}
+.shop_1_top ul li a{
+font-size:14px;
+color:#333333;
+}
+.shop_1_top ul li a i{
+font-size:8px;
+color:#333333;
+margin-left:6px;
+}
+.shop_1_top ul li a:hover{
+color:#996600;
+}
+/*********************shop_end****************/
+
+/*********************shop_2****************/
+#shop_2{
+background-image: url(../../assets/img/46.png);
+min-height:300px;
+background-repeat:no-repeat;
+padding-top:100px;
+background-position: center;
+}
+.shop_2_top_right_inner h2{
+font-size:38px;
+color:#fff;
+padding-bottom:10px;
+} 
+.shop_2_top_right_inner p{
+font-size:18px;
+color:#fff;
+letter-spacing:1px;
+} 
+/*********************shop_2_end****************/
+
+/*********************shop_3****************/
+#shop_3 .ring_top_1{
+font-size:20px;
+font-weight:100px;
+
+}
+#shop_3 .ring_top_2{
+font-size:16px;
+margin-left:5px;
+color:#999999;
+}
+#shop_3 .btn-group, .btn-group-vertical {
+ float: right;
+}
+#shop_3 .well {
+  
+background:none;
+border: none;
+-webkit-box-shadow: none!important;
+box-shadow: none!important;
+}
+
+
+#shop_3 .grid figure {
+ position: relative;
+ float: left;
+ overflow: hidden;
+ min-width: 100%;
+ max-width: 100%;
+ max-height: 100%;
+ width: 100%;
+ background: #fff!important;
+ text-align: center;
+ cursor: pointer;
+}
+
+#shop_3 .grid figure img {
+ position: relative;
+ display: block;
+ min-height: 100%;
+ max-width: 100%;
+ opacity: 0.8;
+}
+
+#shop_3 .grid figure figcaption {
+ padding: 2em;
+ color: #fff;
+ text-transform: uppercase;
+ font-size: 1.25em;
+ -webkit-backface-visibility: hidden;
+ backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+ pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+ z-index: 1000;
+ text-indent: 200%;
+ white-space: nowrap;
+ font-size: 0;
+ opacity: 0;
+}
+/*---------------*/
+/***** Julia *****/
+/*---------------*/
+
+figure.effect-julia {
+ background: #fcfcfc;
+}
+
+figure.effect-julia img {
+ max-width: 100%;
+ height: 100%;
+ -webkit-transition: opacity 1s, -webkit-transform 1s;
+ transition: opacity 1s, transform 1s;
+ -webkit-backface-visibility: hidden;
+ backface-visibility: hidden;
+}
+
+figure.effect-julia figcaption {
+ text-align: left;
+}
+figure.effect-julia p:first-child {
+ -webkit-transition-delay: 0.15s;
+ transition-delay: 0.15s;
+}
+
+figure.effect-julia p:nth-of-type(2) {
+ -webkit-transition-delay: 0.1s;
+ transition-delay: 0.1s;
+}
+
+figure.effect-julia p:nth-of-type(3) {
+ -webkit-transition-delay: 0.05s;
+ transition-delay: 0.05s;
+}
+
+figure.effect-julia:hover p:first-child {
+ -webkit-transition-delay: 0s;
+ transition-delay: 0s;
+}
+
+figure.effect-julia:hover p:nth-of-type(2) {
+ -webkit-transition-delay: 0.05s;
+ transition-delay: 0.05s;
+}
+
+figure.effect-julia:hover p:nth-of-type(3) {
+ -webkit-transition-delay: 0.1s;
+ transition-delay: 0.1s;
+}
+
+figure.effect-julia:hover img {
+ opacity: 0.8;
+ -webkit-transform: scale3d(1.1,1.1,1);
+ transform: scale3d(1.1,1.1,1);
+}
+
+figure.effect-julia:hover p {
+ opacity: 1;
+ -webkit-transform: translate3d(0,0,0);
+ transform: translate3d(0,0,0);
+}
+
+
+//changes made
+
+
+.shop_3_bottom{
+border-top:1px solid #d5c594;
+}
+.shop_3_bottom_left{
+padding:0;
+margin:0;
+}
+.shop_3_bottom_left_inner p{
+font-size:18px;
+padding-top:50px;
+text-align:center;
+}
+.shop_3_bottom_left_inner p i{
+margin-right:5px;
+}
+.shop_3_bottom_right {
+border-left:1px solid #d5c594;
+}
+.shop_3_bottom_right_inner p{
+padding-top:10px;
+}
+.shop_3_bottom_right_inner p a{
+font-size:18px;
+color:#715609;
+}
+.shop_3_bottom_right_inner p a:hover{
+color:#3d341a;
+}
+.shop_3_bottom_right_inner h5{
+font-size:16px;
+color:#987719;
+padding-top:10px;
+padding-bottom:10px;
+}
+.shop_3_bottom_right_inner h6{
+padding-bottom: 50px;
+}
+.shop_3_bottom_right_inner h6 a{
+font-size:15px;
+font-weight:100;
+color:#3d341a;
+}
+/*********************shop_3_end****************/
+
+
+
+
+
+@media screen and (max-width : 767px){
+  .ring_top_1f{
+    display: none;
+  }
+  .ring_top_1{
+    display: flex;
+    justify-content: center;
+  
+  }
+  .filter_inner{
+    align-items: center;
+    padding-left: auto;
+    
+    }
+  .filter_inner_options>select:hover{
+    transform: scale(1.1);
+  }
+.filter_inner_options>select{
+transition: transform 0.3s ease-in-out;
+outline: none !important;
+border: none !important;
+
+option {
+ 
+      
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      white-space: nowrap;
+      font-size: 14px;
+      min-height: 1.2em;
+      border:none !important;
+      
+     
+    };
+}
+.filter_inner_options{
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+width: max-content;
+border-radius: 4px;
+
+}
+.shop_1_top ul {
+text-align:center;
+}
+.shop_2_top_right_inner{
+text-align:center;
+}
+.shop_3_top{
+text-align:center;
+}
+.shop_3_middle ul .price_main {
+ margin-bottom: 10px;
+}
+#shop_3 .grid figure img {
+ min-width: 100%;
+}
+// center_3 start
+.product-list .card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1em;
+  text-align: center;
+  font-family: "Poppins";
+  justify-content: center;
+  width: 200px;
+}
+#product-list {
+  display: flex;
+  
+  
+  padding-bottom: 10px;
+}
+
+.image img {
+  width: 200px;
+  height: 100vh;
+   /* to prevent image distortion */
+}
+}
+
+@media (min-width:768px) and (max-width:960px) { 
+.shop_3_middle ul .price_main .price_1 {
+ font-size: 13px;
+}
+.ring_top_1{
+  display: flex;
+  justify-content: center;
+
+}
+.ring_top_1f{
+  display: none;
+}
+.filter_inner{
+  
+  display: flex;
+  justify-content: center;
+  
+  }
+  
+  .filter_inner_options{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    border:1px solid #f8b90a18 ;
+    width: max-content;
+    height: fit-content;
+    justify-content: center;
+    position: absolute;
+    border-radius: 4px;
+  }
+  .filter_inner_options>select:hover{
+    transform: scale(1.2);
+  }
+  .filter_inner_options>select{
+    position: relative;
+   justify-content: center;
+    padding-left: 3px;
+    outline: none !important;
+    
+  margin: 10px;
+  border: none;
+    transition: transform 0.3s ease-in-out;
+  option {
+   
+    font-weight: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    white-space: nowrap;
+    font-size: 16px;
+    min-height: 1.2em;
+    border:none !important;
+   
+  };
+  
+  }
+  .product-list .card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0px 10px 5px #b2bec3;
+    text-align: center;
+    font-family: "Poppins";
+    justify-content: center;
+    width: 300px;
+  }
+
+}
+
+@media (min-width:961px) and (max-width:1200px) {
+#shop_3 .container {
+ width: auto;
+}
+.filter_inner{
+  
+  display: flex;
+  justify-content: flex-end;
+  
+  }
+  .filter_inner_options{
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+
+    border:1px solid #f8b90a18 ;
+    width: max-content;
+    height: fit-content;
+    justify-content: center;
+    position: absolute;
+    border-radius: 4px;
+  }
+  .filter_inner_options>select:hover{
+    transform: scale(1.2);
+  }
+  .filter_inner_options>select{
+    position: relative;
+   justify-content: center;
+    padding-left: 3px;
+    outline: none !important;
+    
+  margin: 10px;
+  border: none;
+    transition: transform 0.3s ease-in-out;
+  option {
+   
+    font-weight: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    white-space: nowrap;
+    font-size: 16px;
+    min-height: 1.2em;
+    border:none !important;
+   
+  };
+  
+  }
+  .product-list .card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0px 10px 5px #b2bec3;
+    text-align: center;
+    font-family: "Poppins";
+    justify-content: center;
+    width: 300px;
+  }
+.footer_top_left_inner h4 {
+ font-size: 15px;
+}
+
+  
+
+}
+@media (min-width:1201px) and (max-width:1500px) {
+  .filter_inner{
+  
+    display: flex;
+    justify-content: flex-end;
+    
+    }
+    .filter_inner_options{
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+
+      border:1px solid #f8b90a18 ;
+      width: max-content;
+      height: fit-content;
+      justify-content: center;
+      position: absolute;
+      border-radius: 4px;
+    }
+    .filter_inner_options>select:hover,.filter_inner_options>select:focus{
+      transform: scale(1.2);
+    }
+    .filter_inner_options>select{
+      position: relative;
+     justify-content: center;
+      padding-left: 3px;
+      outline: none !important;
+    margin: 10px;
+    border: none;
+      transition: transform 0.3s ease-in-out;
+    option {
+     
+      font-weight: normal;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      white-space: nowrap;
+      font-size: 16px;
+      min-height: 1.2em;
+      border:none !important;
+     
+    };
+   
+    }
+    .product-list .card {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 10px;
+      padding: 1em;
+      box-shadow: 0px 10px 5px #cecece;
+      text-align: center;
+      font-family: "Poppins";
+      justify-content: center;
+      width: 350px;
+    }
+}
+
+
+
+//center_3 start
+// // product list / Grid list styles
+.product-list {
+    background-color: #fafbfc;
+    padding: 1em;
+
+  }
+  
+  
+  
+  .card .title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  
+  .image figure>img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: fill;
+     /* to prevent image distortion */
+  }
+  
+  .card .text {
+    text-align: left;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    font-size: 12px;
+    
+    font-weight: bold;
+  }
+  
+  .buy-button {
+    background-color: #f9ca24;
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+  }
+  .buy-button:hover {
+    box-shadow: 0px 5px 5px #b2bec3;
+    color: #eb4d4b;
+  }
+  
+ 
+  
+  .align-center {
+    text-align: center;
+  }
+  
+  
+  .sub-menu {
+    max-width: 20%;
+    padding: 0;
+    background-color: #771313;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px #8395a7;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s ease;
+  }
+  
+  .sub-menu a:hover {
+    color: #8395a7;
+  }
+  
+  nav ul li:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transition: 1s ease;
+  }
+  
+  .card img {
+    transition: 0.5s ease;
+    justify-items: center;
+    
+  }
+  
+  .card:hover img {
+    transform: scale(1);
+    transition: 1s ease;
+  }
+  
+  .card .details {
+    position: relative;
+    top: 50px;
+    transition: 2s ease;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .card:hover .details {
+    opacity: 1;
+    visibility: visible;
+    top: 0px;
+    transition: 2s ease;
+  }
+  
+  .text,
+  .title {
+   
+    transition: 0.5s ease;
+  }
+  
+  .card:hover .text,
+  .card:hover .title {
+    opacity: 0;
+    transition: 1 ease;
+  }
+  
+  .new {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 5;
+    animation: pulse 2s ease-in infinite;
+  }
+  
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+    
+}
+
+.product-container {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .product-container {
+    width: calc(50% - 10px);
+  }
+}
+
+// center3 _end
+
+
+//filtter
+
+
+
+
