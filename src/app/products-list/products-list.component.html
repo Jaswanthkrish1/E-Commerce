@@ -1,0 +1,232 @@
+<head>
+    
+</head>
+<body>
+   
+    <section id="shop_1" class="clearfix">
+     <div class="container">
+      <div class="row">
+       <div class="shop_1_top clearfix">
+        <ul>
+         <li><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></li>
+         <li><a href="#">Jewellery <i class="fa fa-chevron-right"></i></a></li>
+         <li><p>Rings</p></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </section>
+    
+    <section id="shop_2" class="clearfix">
+     <div class="container">
+      <div class="row">
+       <div class="shop_2_top clearfix">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6 shop_2_top_right clearfix">
+         <div class="shop_2_top_right_inner clearfix">
+          <h2>Amet</h2>
+          <p>Sed dignissim lacinia nunc lacinia</p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+   
+    <section id="shop_3" class="clearfix">
+        <div class="container-fluid">
+         <div class="row">
+          <div class="shop_3_top clearfix">
+           <div class="well well-sm">
+            <form >
+               <strong class="ring_top_1">VIEW ALL Jewelry  <span class="ring_top_2" >( Items :- {{products.length}} )</span></strong>
+               <div class="filter">
+                <div class="filter_inner">
+                  <div class="filter_inner_options">
+                    <strong class="ring_top_1f">Filter </strong>
+                    <label for="Price" style="margin-left: 5px;">Price <span style="margin-right: 0px;">:</span></label>
+                    <select name="Price">
+                      <option id="a" value="">All Jewelry</option>
+                      <option value="option1">Rings</option>
+                      <option value="option2">Jewelry</option>
+                      <option value="option3">Handmade</option>
+                    </select>
+                    <label for="Range" style="margin-left: 5px;">Range<span style="margin-right: 0px;">:</span></label>
+
+                    <select type="dropdown" name="Range" [(ngModel)]="selectedOption" (ngModelChange)="filterdatavalue(selectedOption)" >
+                      <option  value="0">All-Ranges</option>
+                      <option value="1000">1000</option>
+                      <option value="500">500</option>
+                      <option value="250">250</option>
+                    </select>
+                    <label for="category" style="margin-left: 5px;">Gold<span style="margin-right: 0px;">:</span></label>
+                    <select name="category">
+                      <option value=""> karat</option>
+                      <option value="22-karat">22 Karat</option>
+                      <option value="24-karat">24 Karat</option>
+                      <option value="18-karat">18 Karat</option>
+                    </select>
+                  </div>
+                </div>
+               </div>
+              </form>
+           </div>
+           
+
+                
+               <!-- <div class="item  col-sm-4">
+                <div class="card">
+                    <div class="title">Polaroid Camera</div>
+                    <div class="image ">
+                       
+                             <figure class="effect-julia">
+                      <img
+                        src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1526170375885-4d8ecf77b99f.jpeg?v=1585724749339"
+                      />
+                    
+                    <figcaption>
+                    <div class="text">
+                      This is a polaroid camera. O'l skool style.
+                    </div></figcaption>
+                </figure></div>
+               
+                       <button  class="buy-button details">
+                        Buy Now
+                      </button>
+                 
+                  </div>
+               </div> -->
+               <div id="product-list" class="row list-group product-list" >
+                <div class="product-container"  *ngFor="let list of products " >
+                  <div class="item col-sm-10" >
+                    <div class="card">
+                      <div class="title">{{list.title}}</div>
+                      <div class="image" >
+                        <figure class="effect-julia">
+                          <img  [src]="list.imagenavigate1" />
+                          <figcaption>
+                            <div class="text">
+                              {{list.price}}
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <a >
+                      <button type="submit" class="buy-button details" (click)="buyproduct(list)">
+                        Buy Now
+                      </button>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+         </div>
+        </div>
+       </section>
+    
+    <!-- <section id="footer" class="clearfix">
+     <div class="container">
+      <div class="row">
+       <div class="footer_top clearfix">
+      <div class="col-sm-2 footer_top_left left_1 clearfix">
+       <div class="footer_top_left_inner clearfix">
+        <h4>INCEPTOS</h4>
+        <ul>
+         <li><a href="shop.html">consectetur</a></li>
+         <li><a href="about.html">About Us</a></li>
+         <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+       </div>
+      </div>
+      <div class="col-sm-2 footer_top_left left_1 clearfix">
+       <div class="footer_top_left_inner clearfix">
+        <h4>SEM SOCIOSQU</h4>
+        <ul>
+         <li><a href="#">Taciti, Praesent & Torquent Libero</a></li>
+         <li><a href="#">FAQs</a></li>
+         <li><a href="#">Terms & Conditions and  Privacy Policy</a></li>
+        </ul>
+       </div>
+      </div>
+      <div class="col-sm-2 footer_top_left left_1 clearfix">
+       <div class="footer_top_left_inner clearfix">
+        <h4>DIGNISSIM INTEGER</h4>
+        <ul>
+         <li><a href="#">Ipsum Dolor Sit</a></li>
+         <li><a href="#">Duis Sagittis Ipsum</a></li>
+         <li><a href="#">Nulla quis sem at nibh</a></li>
+         <li><a href="#">SEM Litora</a></li>
+        </ul>
+       </div>
+      </div>
+      <div class="col-sm-2 footer_top_left left_1 clearfix">
+       <div class="footer_top_left_inner clearfix">
+        <h4>IMPERDIET</h4>
+        <ul>
+         <li><a href="#">Litora Torquent</a></li>
+         <li><a href="#">Mauris Massa</a></li>
+         <li><a href="#">Duis Sagittis</a></li>
+         <li><a href="#">Sed Dignissim Lacinia</a></li>
+        </ul>
+       </div>
+      </div>
+      <div class="col-sm-2 footer_top_left left_1 clearfix">
+       <div class="footer_top_left_inner clearfix">
+        <h4>ADIPISCING</h4>
+        <ul>
+         <li><a href="#">Consectetur</a></li>
+         <li><a href="#">Taciti Sociosqu</a></li>
+         <li><a href="#">Curabitursodales</a></li>
+        </ul>
+       </div>
+      </div>
+      <div class="col-sm-2 footer_top_left clearfix">
+       <div class="footer_top_left_inner clearfix">
+        <h4>GET IN TOUCH</h4>
+        <ul>
+         <li><a href="#">9999-626-5353</a></li>
+         <li><a href="#">(11am - 7pm IST, MON - SAT)</a></li>
+         <li><a href="#">info@gmail.com</a></li>
+         <li><a href="#">Conubia Nostra</a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+      </div>
+     </div>
+    </section>
+    
+    <section id="footer_last" class="clearfix">
+     <div class="container">
+      <div class="row">
+       <div class="footer_last clearfix">
+        <h5>Buy Jewellery Online with www.kpjeweller.com</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odionec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+        <p>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero. Sed dignissim lacinia nunc.</p>
+        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero. </p>
+        <h6>. Consectetur Elementum</h6>
+        <h6>. Sociosqu Elementum</h6>
+        <h6>. Dapibus Elementum</h6>
+        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero. </p>
+        <p>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero. Sed dignissim lacinia nunc.</p>
+       </div>
+      </div>
+     </div>
+    </section>
+    
+    <section id="footer_last_2" class="clearfix">
+     <div class="container">
+      <div class="row">
+       <div class="footer_last_2 clearfix">
+       <div class="footer_last_2_inner clerafix">
+           <p class="website">© 2013 Your Website Name. All rights reserved | Design by<a href="http://www.templateonweb.com"> TemplateOnWeb</a></p>
+          </div>
+       </div>
+      </div>
+     </div>
+    </section> -->
+ 
+    </body>
+    <router-outlet></router-outlet>
